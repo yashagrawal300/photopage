@@ -1,0 +1,98 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+
+}
+#logo {
+     margin: 5px 0px;
+ }
+ #logo img {
+     margin: 4px 4px;
+     height: 35px;
+ }
+
+#navbar ul li a{
+     font-size: 15px;
+     padding: 0px 6px;
+     padding-bottom: 8px;
+     width: 100%;
+}
+#navbar ul li a{
+     color: black;
+     display: block;
+     border-radius: 20px;
+     text-decoration: none;
+     
+ }
+#home{
+     height:370px;
+     padding: 3px 28px;
+}
+#home::before{
+    height:480px;
+    background: url('images/background.jpg') no-repeat center center/cover;
+}
+#home p{
+     font-size: 16px;
+}
+.h-primary {
+     font-size: 2rem;
+     padding: 12px;
+     font-family: 'Bungee Shade', cursive;
+ }
+ .h-pri{
+     font-size: 20px;
+     font-family: 'Rancho', cursive;
+    color: white;
+}
+
+ .h-middle {
+     font-size: 1.7rem;
+     padding: 12px;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ .h-higher {
+     font-size: 1.7rem;
+     padding: 12px;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+#services{
+   flex-direction: column;
+}
+
+
+#wan{
+     position: relative;
+     font-size: 10px;
+     margin-top: 0px;
+ }
+ 
+ #ban img{
+     height: 25px; 
+ }
+ 
+ #man{
+     position: relative;
+     margin:auto;
+     display:block;
+ 
+ }
+ #man img{
+        height:40px;
+        cursor:pointer;
+ }
+ 
+ #yan img{
+     height: 20px
+ }
+ #can{
+     position: relative;
+     font-size: 13px;
+     margin-top: 0px;
+     cursor:pointer;
+ }
+ 

@@ -1,0 +1,373 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+:root{
+    --navbar-height: 59px;
+}
+
+#navbar{
+    display : flex;
+    align-items: center;
+
+    top: 0px;
+}
+
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    margin: 3px 6px;
+    height: 59px;
+}
+
+
+#navbar ul{
+    display: flex;
+
+}
+
+#navbar::before{
+    content: "";
+    background-color: white;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 30px;
+}
+
+#navbar ul li a{
+    color: blue;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 10px;
+    text-decoration: none;
+    
+}
+
+#navbar ul li a:hover{
+    color: white;
+    background-color: black;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('images/background.jpg') no-repeat center center/cover;
+    height: 842px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#home h1{
+    text-align: center;
+    color: white;
+}
+#home p{
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+
+}
+
+.h-primary{
+     font-size: 3rem;
+     padding: 12px;
+     font-family: 'Bungee Shade', cursive;
+    color: white;
+}
+
+.h-secondary{
+    font-size: 2rem;
+    padding: 12px;
+    color: white;
+}
+
+.h-higher{
+    font-size: 3rem;
+     padding: 12px;
+     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.h-middle{
+    font-size: 3rem;
+    padding: 12px;
+    color: white;
+ 
+}
+
+.center{
+    text-align: center;
+}
+
+#services{
+    margin:50px;
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid white;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    color: white;
+
+}
+
+#services .box img{
+    height: 180px;
+    margin: auto;
+    display: block;
+}
+
+
+#testimonials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:100%;
+    color: white;
+}
+.testimonial-heading{
+    letter-spacing: 1px;
+    margin: 30px 0px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.testimonial-heading h1{
+    font-size: 2.2rem;
+    font-weight: 500;
+    background-color: #202020;
+    color: #ffffff;
+    padding: 10px 20px;
+}
+.testimonial-heading span{
+    font-size: 1.3rem;
+    color: #252525;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.testimonial-box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width:100%;
+}
+.testimonial-box{
+    width:500px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 15px;
+    cursor: pointer;
+}
+.profile-img{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.profile-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+.name-user{
+    display: flex;
+    flex-direction: column;
+}
+.name-user strong{
+    color: #3d3d3d;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+.name-user span{
+    color: #979797;
+    font-size: 0.8rem;
+}
+.reviews{
+    color: #f9d71c;
+}
+.box-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.client-comment p{
+    font-size: 0.9rem;
+    color: #4b4b4b;
+}
+.testimonial-box:hover{
+    transform: translateY(-10px);
+    transition: all ease 0.3s;
+}
+ 
+@media(max-width:1060px){
+    .testimonial-box{
+        width:45%;
+        padding: 10px;
+    }
+}
+@media(max-width:790px){
+    .testimonial-box{
+        width:100%;
+    }
+    .testimonial-heading h1{
+        font-size: 1.4rem;
+    }
+}
+@media(max-width:340px){
+    .box-top{
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+    .reviews{
+        margin-top: 10px;
+    }
+}
+::selection{
+    color: #ffffff;
+    background-color: #252525;
+}
+ 
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('images/images (2).jpg') no-repeat center center/cover;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+
+}
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+    .btn{
+        margin:auto;
+        display:block;
+        padding: 10px 20px;
+        border: 2px solid white;
+        background-color: rgb(148, 28, 28);
+        color: white;
+        font-size: 1rem;
+        border-radius: 10px;
+        cursor:pointer;
+        margin-top: 20px;
+    }
+
+    .bpn{
+        margin:auto;
+        display:block;
+        padding: 10px 20px;
+        border: 2px solid white;
+        background-color: blue;
+        color: white;
+        font-size: 1.2rem;
+        border-radius: 10px;
+        cursor:pointer;
+        margin-top: 20px;
+    }
+#tan {
+    display: flex;
+}
+
+
+#wan{
+    position: relative;
+    font-size: 20px;
+    margin-top: 0px;
+}
+#ban img{
+    height: 50px; 
+}
+
+#man{
+    position: relative;
+    margin:auto;
+    display:block;
+
+}
+#man img{
+       height:100px;
+       cursor:pointer;
+}
+#yan img{
+    height: 50px
+}
+#can{
+    position: relative;
+    font-size: 20px;
+    margin-top: 10px;
+    padding: 5px;
+    cursor:pointer;
+}
